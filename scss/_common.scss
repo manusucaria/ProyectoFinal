@@ -1,0 +1,19 @@
+* {
+    font-family: $richard;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+main{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+main div div img:hover{
+    transform: scale(1.03);
+    transition: transform 1.6s ease;
+}

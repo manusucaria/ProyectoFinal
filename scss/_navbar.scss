@@ -1,0 +1,209 @@
+//NAV
+header{
+    background:linear-gradient(to right top, map-get($map:$paleta, $key: 'main'), map-get($map:$paleta, $key: 'secondary'));
+    opacity: .9;
+    width: 100%;
+    border-bottom: $borders .1rem solid;
+    h1{
+        @include texto(6rem,600,map-get($map:$paleta, $key: 'white'));
+        font-family: $conjuro;
+        &:hover{
+            color: $hovers;
+            transform: translateX(.5px);
+        }
+        @include cel{
+            font-size: 5rem;
+        }
+        @include smart{
+            font-size: 5rem;
+        }
+        @include tablet{
+            font-size: 6rem;
+        }
+        @include tablet-xl{
+            font-size: 4rem;
+        }
+        @media screen and (min-width: 901px) and (max-width: 1350px){
+            font-size: 6rem;
+        }
+    }
+    p{
+        @include texto(2rem,300,map-get($map:$paleta, $key: 'white'));
+        font-family: $subtitulo;
+        &:hover{
+            color: $hovers;
+            transform: translateX(.5px);
+        }
+        @include cel{
+            font-size: 1.9rem;
+        }
+        @include smart{
+            font-size: 1.9rem;
+        }
+        @include tablet{
+            font-size: 1.9rem;
+        }
+        @include tablet-xl{
+            font-size: 1.5rem;
+        }
+        @include desktop{
+            font-size: 1.8rem;
+        }
+        @include wide{
+            font-size: 1.5rem;
+        }
+    }
+    ul{
+        list-style-type: none;
+        li a{
+                p{
+                    @include texto(2.7rem,400,map-get($map:$paleta, $key: 'white'));
+                    font-family: $richard;
+                    @include cel{
+                        font-size: 2.3rem;
+                    }
+                    @include smart{
+                        font-size: 3rem;
+                    }
+                    @include tablet{
+                        font-size: 3rem;
+                    }
+                    @media screen and (min-width: 688px) and (max-width: 767px){
+                        font-size: 1.6rem;
+                    }
+                    @media screen and (min-width: 768px) and (max-width: 900px){
+                        font-size: 2rem;
+                    }
+                    @include desktop{
+                        font-size: 2.5rem;
+                    }
+                    @include wide{
+                        font-size: 2.2rem;
+                    }
+                    transition: transform .1s;
+                    &:hover{
+                        color: $hovers;
+                        transform: translateX(.5px);
+                    }
+                }
+        }
+    }
+    button{
+        background-color: transparent;
+        border-color:transparent;
+        img{
+            height: 30px;
+            width: 30px;
+            background-color: transparent;
+            cursor: pointer;
+            transition: transform .1s;
+            &:hover{
+                transform: translateX(.5px);
+            }
+            @media screen and (min-width: 688px) and (max-width: 1110px){
+                height: 18px;
+                width: 18px;
+            }
+            @include wide{
+                height: 21px;
+                width: 21px;
+            }
+        }
+    }
+}
+.logo{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    margin: 1rem;
+    border: $borders .1rem solid;
+    transition: transform .1s;
+    &:hover{
+        transform: rotate(180deg);
+        transition: transform 2s;
+    }
+    @include cel{
+        height: 35px;
+        width: 35px;
+    }
+    @include smart{
+        height: 37px;
+        width: 37px;
+    }
+    @include tablet{
+        height: 50px;
+        width: 50px;
+    }
+    @include tablet-xl{
+        height: 65px;
+        width: 65px;
+    }
+    @include desktop{
+        height: 90px;
+        width: 90px
+    }
+    @include wide{
+        height: 140px;
+        width: 140px;
+    }
+}
+.botones{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    opacity: .8;
+    transition: transform .1s;
+    &:hover{
+        transform: translateX(.5px);
+    }
+    @include cel{
+        height: 15px;
+        width: 15px;
+        margin-left: 1rem;;
+    }
+    @include smart{
+        height: 14px;
+        width: 14px;
+        margin-left: 1rem;
+    }
+    @include tablet{
+        height: 17px;
+        width: 17px;
+        margin-left: 1rem;
+    }
+    @include tablet-xl{
+        height: 20px;
+        width: 20px;
+    }
+    @include desktop{
+        height: 20px;
+        width: 20px;
+    }
+    @include wide{
+        height: 25px;
+        width: 25px;
+    }
+
+}
+.botones-margin{
+    margin:.3rem;
+}
+.buscador{
+    margin:.3rem;
+}
+.barra-buscadora{
+    height: 30px;
+    width: 150px;
+    @include tablet-xl{
+        height: 18px;
+        width: 65px;
+    }
+    @include desktop{
+        height: 20px;
+        width: 85px;
+    }
+    @include wide{
+        height: 25px;
+        width: 100px;
+    }
+}
